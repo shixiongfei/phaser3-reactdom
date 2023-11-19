@@ -2,7 +2,7 @@
 
 Using React in the Phaser3 engine
 
-### Phaser3 configuration phaser3-reactdom plugin
+### Configure phaser3-reactdom plugin
 
 ```JavaScript
 import { PhaserReact, PhaserSceneReact } from "phaser3-reactdom";
@@ -13,19 +13,22 @@ const game = new Phaser.Game({
   // ...
   plugins: {
     global: [
+      // ...
       {
         key: "phaser3-reactdom",
         plugin: PhaserReact,
         start: true,
-      },
+      }
     ],
     scene: [
+      // ...
       {
         key: "phaser3-reactdom-scene",
         plugin: PhaserSceneReact,
         start: true,
-      },
+      }
     ],
+    // ...
   },
   // ...
 })
