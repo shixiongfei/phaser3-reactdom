@@ -13,7 +13,7 @@ export * from "./plugin.js";
 export { default as Renderer } from "./renderer.js";
 
 import { ElementType } from "react";
-import { ReactDomElement } from "./components";
+import { ReactDomElement } from "./components.js";
 
 declare module "phaser" {
   // eslint-disable-next-line @typescript-eslint/no-namespace
