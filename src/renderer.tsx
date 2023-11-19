@@ -14,7 +14,8 @@ import Components, { ReactDomElement } from "./components.js";
 
 type ReactDomComponent = {
   element: ReactDomElement<object>;
-  component: ElementType;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  component: ElementType<any>;
 };
 
 class Wrap extends Component<ReactDomComponent> {

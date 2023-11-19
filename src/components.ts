@@ -48,7 +48,8 @@ class Components {
     this.lastId = 0;
   }
 
-  addComponent<T extends object>(component: ElementType, props?: T) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  addComponent<T extends object>(component: ElementType<any>, props?: T) {
     const element = new ReactDomElement(++this.lastId, props ?? {}, this);
 
     this.events.emit("component-added", {

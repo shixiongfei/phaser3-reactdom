@@ -34,7 +34,8 @@ export class PhaserReact extends Plugins.BasePlugin {
     root.render(<Renderer />);
   }
 
-  createReactDom<T extends object>(component: ElementType, props?: T) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  createReactDom<T extends object>(component: ElementType<any>, props?: T) {
     return Components.addComponent(component, props);
   }
 }
@@ -49,7 +50,11 @@ export class PhaserSceneReact extends Plugins.ScenePlugin {
     pluginManager.registerGameObject("sceneReactDom", this.createSceneReactDom);
   }
 
-  createSceneReactDom<T extends object>(component: ElementType, props?: T) {
+  createSceneReactDom<T extends object>(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    component: ElementType<any>,
+    props?: T,
+  ) {
     if (!this.scene) {
       return undefined;
     }

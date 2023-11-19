@@ -20,12 +20,14 @@ declare module "phaser" {
   namespace GameObjects {
     interface GameObjectFactory {
       reactDom<T extends object>(
-        component: ElementType,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        component: ElementType<any>,
         props?: T,
       ): ReactDomElement<T>;
 
       sceneReactDom<T extends object>(
-        component: ElementType,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        component: ElementType<any>,
         props?: T,
       ): ReactDomElement<T>;
     }
