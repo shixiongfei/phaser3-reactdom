@@ -41,13 +41,17 @@ class ExampleScene extends Phaser.Scene {
   // ...
   create() {
     // The topUI will not be destroyed during scene destruction.
-    const topUI = this.add.reactDom(ComponentTopUI);
+    const topUI = this.add.reactDom(ComponentTopUI, { state: ... });
     // ...
 
     // The sceneUI will be destroyed simultaneously as the scene is destroyed.
-    const sceneUI = this.add.sceneReactDom(ComponentSceneUI);
+    this.sceneUI = this.add.sceneReactDom(ComponentSceneUI, { state: ... });
     // ...
   }
   // ...
+  updateSceneUIState() {
+    // Setting new state
+    this.sceneUI.setState({ state: ... })
+  }
 }
 ```
