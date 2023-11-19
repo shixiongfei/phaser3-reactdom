@@ -1,0 +1,47 @@
+{
+  "name": "phaser3-reactdom",
+  "version": "1.0.0",
+  "description": "Using React in the Phaser3 engine",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shixiongfei/phaser3-reactdom.git"
+  },
+  "keywords": [
+    "phaser",
+    "phaser3",
+    "react",
+    "ui",
+    "plugin",
+    "library"
+  ],
+  "author": "shixiongfei",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/shixiongfei/phaser3-reactdom/issues"
+  },
+  "homepage": "https://github.com/shixiongfei/phaser3-reactdom#readme",
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "phaser": "^3.50.0 || ^3.60.0 || ^3.70.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  }
+}
