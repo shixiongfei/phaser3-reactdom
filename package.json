@@ -1,9 +1,13 @@
 {
   "name": "phaser3-reactdom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Using React in the Phaser3 engine",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w"
