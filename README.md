@@ -1,5 +1,7 @@
 # phaser3-reactdom
 
+[![NPM Version](https://img.shields.io/npm/v/phaser3-reactdom)](https://www.npmjs.com/package/phaser3-reactdom)
+
 Using React in the Phaser3 engine
 
 ### Configure phaser3-reactdom plugin
